@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "UUID": "5a00aeb5-b354-494c-b250-f3193c606621",
+  "Name": "associate",
+  "Properties": {
+    "description": "senses binding",
+    "language": "en"
+  },
+  "PropertiesSchemaFile": "properties_schema.json",
+  "DHTConfig": {
+    "HashType": "sha2-256"
+  },
+  "Zomes": [
+    {
+      "Name": "visual",
+      "Description": "visual associations",
+      "RibosomeType": "js",
+      "CodeFile": "visual.js",
+      "Entries": [
+        {
+          "Name": "orange",
+          "Required": true,
+          "DataFormat": "string",
+          "Sharing": "public"
+        },
+        {
+          "Name": "red",
+          "Required": true,
+          "DataFormat": "string",
+          "Sharing": "public"
+        },
+        {
+          "Name": "blue",
+          "Required": true,
+          "DataFormat": "string",
+          "Sharing": "public"
+        },
+        {
+          "Name": "green",
+          "Required": true,
+          "DataFormat": "string",
+          "Sharing": "public"
+        },
+        {
+          "Name": "yellow",
+          "Required": true,
+          "DataFormat": "string",
+          "Sharing": "public"
+        }
+      ],
+      "Functions": [
+        {
+          "Name": "orangeCreate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "orangeRead",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "orangeUpdate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "redCreate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "redRead",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "redUpdate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "blueCreate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "blueRead",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "blueUpdate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "greenCreate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "greenRead",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "greenUpdate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "yellowCreate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "yellowRead",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "yellowUpdate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "associate",
+          "CallingType": "string",
+          "Exposure": ""
+        },
+        {
+          "Name": "associate2",
+          "CallingType": "json",
+          "Exposure": ""
+        }
+      ]
+    }
+  ]
+}

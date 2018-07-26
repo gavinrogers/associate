@@ -1,0 +1,123 @@
+{
+  "Tests": [
+    {
+      "Convey": "auto-generated test for orangeCreate",
+      "Zome": "visual",
+      "FnName": "orangeCreate",
+      "Input": "test",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for orangeRead",
+      "Zome": "visual",
+      "FnName": "orangeRead",
+      "Input": "%h%",
+      "Output": "test"
+    },
+    {
+      "Convey": "auto-generated test for orangeUpdate",
+      "Zome": "visual",
+      "FnName": "orangeUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for redCreate",
+      "Zome": "visual",
+      "FnName": "redCreate",
+      "Input": "test",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for redRead",
+      "Zome": "visual",
+      "FnName": "redRead",
+      "Input": "%h%",
+      "Output": "test"
+    },
+    {
+      "Convey": "auto-generated test for redUpdate",
+      "Zome": "visual",
+      "FnName": "redUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for blueCreate",
+      "Zome": "visual",
+      "FnName": "blueCreate",
+      "Input": "test",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for blueRead",
+      "Zome": "visual",
+      "FnName": "blueRead",
+      "Input": "%h%",
+      "Output": "test"
+    },
+    {
+      "Convey": "auto-generated test for blueUpdate",
+      "Zome": "visual",
+      "FnName": "blueUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for greenCreate",
+      "Zome": "visual",
+      "FnName": "greenCreate",
+      "Input": "test",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for greenRead",
+      "Zome": "visual",
+      "FnName": "greenRead",
+      "Input": "%h%",
+      "Output": "test"
+    },
+    {
+      "Convey": "auto-generated test for greenUpdate",
+      "Zome": "visual",
+      "FnName": "greenUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for yellowCreate",
+      "Zome": "visual",
+      "FnName": "yellowCreate",
+      "Input": "test",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for yellowRead",
+      "Zome": "visual",
+      "FnName": "yellowRead",
+      "Input": "%h%",
+      "Output": "test"
+    },
+    {
+      "Convey": "auto-generated test for yellowUpdate",
+      "Zome": "visual",
+      "FnName": "yellowUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for associate",
+      "Zome": "visual",
+      "FnName": "associate",
+      "Input": "",
+      "Output": "a string"
+    },
+    {
+      "Convey": "auto-generated test for associate2",
+      "Zome": "visual",
+      "FnName": "associate2",
+      "Input": "",
+      "Output": {}
+    }
+  ]
+}

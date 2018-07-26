@@ -1,0 +1,609 @@
+{
+  # This is a holochain scaffold yaml definition. http://ceptr.org/projects/holochain
+
+  # DNA File Version
+  # Version indicator for changes to DNA
+  "Version": "0.0.1",
+  "Generator": "hc-scaffold:0.1.0+06aba91",
+
+  # Application DNA
+  # The DNA specifies the entry structure and functions and configuration of your application
+  "DNA": {
+
+    # DNA File Version
+    # Version indicator for changes to DNA
+    "Version": 1,
+
+    # DNA Unique ID
+    # This ID differentiates your app from others. For example, to tell one Slack team from another which same code.
+    "UUID": "5a00aeb5-b354-494c-b250-f3193c606621",
+
+    # Application Name
+    # What would you like to call your holochain app?
+    "Name": "associate",
+
+    # Properties
+    # Properties that you want available across all Zomes.
+    "Properties": {
+
+      # Application Description
+      # Briefly describe your holochain app.
+      "description": "senses binding",
+
+      # Language
+      # The base (human) language of this holochain app.
+      "language": "en"
+    },
+
+    # Properties Schema File
+    # Describes the entries in the Properties section of your dna file.
+    "PropertiesSchemaFile": "properties_schema.json",
+
+    # DHT Settings
+    # Configure the properties of your Distributed Hash Table (e.g. hash algorithm, neighborhood size, etc.).
+    "DHTConfig": {
+      "HashType": "sha2-256"
+    },
+
+    # Zomes
+    # List the Zomes your application will support.
+    "Zomes": [
+      {
+
+        # Zome Name
+        # The name of this code module.
+        "Name": "visual",
+
+        # Zome Description
+        # What is the purpose of this module?
+        "Description": "visual associations",
+
+        # Ribosome Type
+        # What scripting language will you code in?
+        "RibosomeType": "js",
+
+        # Code File
+        # Points to the main script file for this Zome.
+        "CodeFile": "visual.js",
+
+        # Zome Entries
+        # Data stored and tracked by your Zome.
+        "Entries": [
+          {
+            "Name": "orange", # The name of this entry.
+            "Required": true, # Is this entry required?
+            "DataFormat": "string", # What type of data should this entry store?
+            "Sharing": "public", # Should this entry be publicly accessible?
+            "_": "cru"
+          },
+          {
+            "Name": "red", # The name of this entry.
+            "Required": true, # Is this entry required?
+            "DataFormat": "string", # What type of data should this entry store?
+            "Sharing": "public", # Should this entry be publicly accessible?
+            "_": "cru"
+          },
+          {
+            "Name": "blue", # The name of this entry.
+            "Required": true, # Is this entry required?
+            "DataFormat": "string", # What type of data should this entry store?
+            "Sharing": "public", # Should this entry be publicly accessible?
+            "_": "cru"
+          },
+          {
+            "Name": "green", # The name of this entry.
+            "Required": true, # Is this entry required?
+            "DataFormat": "string", # What type of data should this entry store?
+            "Sharing": "public", # Should this entry be publicly accessible?
+            "_": "cru"
+          },
+          {
+            "Name": "yellow", # The name of this entry.
+            "Required": true, # Is this entry required?
+            "DataFormat": "string", # What type of data should this entry store?
+            "Sharing": "public", # Should this entry be publicly accessible?
+            "_": "cru"
+          }
+        ],
+
+        # Zome Functions
+        # Functions which can be called in your Zome's API.
+        "Functions": [
+          {
+            "Name": "orangeCreate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "c:orange"
+          },
+          {
+            "Name": "orangeRead", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "r:orange"
+          },
+          {
+            "Name": "orangeUpdate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "u:orange"
+          },
+          {
+            "Name": "redCreate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "c:red"
+          },
+          {
+            "Name": "redRead", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "r:red"
+          },
+          {
+            "Name": "redUpdate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "u:red"
+          },
+          {
+            "Name": "blueCreate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "c:blue"
+          },
+          {
+            "Name": "blueRead", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "r:blue"
+          },
+          {
+            "Name": "blueUpdate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "u:blue"
+          },
+          {
+            "Name": "greenCreate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "c:green"
+          },
+          {
+            "Name": "greenRead", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "r:green"
+          },
+          {
+            "Name": "greenUpdate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "u:green"
+          },
+          {
+            "Name": "yellowCreate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "c:yellow"
+          },
+          {
+            "Name": "yellowRead", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "r:yellow"
+          },
+          {
+            "Name": "yellowUpdate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "public", # Level to which is this function exposed.
+            "_": "u:yellow"
+          },
+          {
+            "Name": "associate", # The name of this function.
+            "CallingType": "string", # Data format for parameters passed to this function.
+            "Exposure": "", # Level to which is this function exposed.
+          },
+          {
+            "Name": "associate2", # The name of this function.
+            "CallingType": "json", # Data format for parameters passed to this function.
+            "Exposure": "", # Level to which is this function exposed.
+          }
+        ],
+
+        # Zome Source Code
+        # The logic that will control Zome behavior
+        "Code": "'use strict';\n\n// -----------------------------------------------------------------\n//  This stub Zome code file was auto-generated by hc-scaffold\n// -----------------------------------------------------------------\n\n// -----------------------------------------------------------------\n//  Exposed functions with custom logic https://developer.holochain.org/API_reference\n// -----------------------------------------------------------------\n\nfunction orangeCreate (orangeEntry) {\n  var orangeHash = commit(\"orange\", orangeEntry);\n  return orangeHash;\n}\n\nfunction orangeRead (orangeHash) {\n  var orange = get(orangeHash);\n  return orange;\n}\n\nfunction orangeUpdate (orangeHash) {\n  var sampleValue={\"extraField\":true};\n  var orangeOutHash = update(\"orange\", sampleValue, orangeHash);\n  return orangeOutHash;\n}\n\nfunction redCreate (redEntry) {\n  var redHash = commit(\"red\", redEntry);\n  return redHash;\n}\n\nfunction redRead (redHash) {\n  var red = get(redHash);\n  return red;\n}\n\nfunction redUpdate (redHash) {\n  var sampleValue={\"extraField\":true};\n  var redOutHash = update(\"red\", sampleValue, redHash);\n  return redOutHash;\n}\n\nfunction blueCreate (blueEntry) {\n  var blueHash = commit(\"blue\", blueEntry);\n  return blueHash;\n}\n\nfunction blueRead (blueHash) {\n  var blue = get(blueHash);\n  return blue;\n}\n\nfunction blueUpdate (blueHash) {\n  var sampleValue={\"extraField\":true};\n  var blueOutHash = update(\"blue\", sampleValue, blueHash);\n  return blueOutHash;\n}\n\nfunction greenCreate (greenEntry) {\n  var greenHash = commit(\"green\", greenEntry);\n  return greenHash;\n}\n\nfunction greenRead (greenHash) {\n  var green = get(greenHash);\n  return green;\n}\n\nfunction greenUpdate (greenHash) {\n  var sampleValue={\"extraField\":true};\n  var greenOutHash = update(\"green\", sampleValue, greenHash);\n  return greenOutHash;\n}\n\nfunction yellowCreate (yellowEntry) {\n  var yellowHash = commit(\"yellow\", yellowEntry);\n  return yellowHash;\n}\n\nfunction yellowRead (yellowHash) {\n  var yellow = get(yellowHash);\n  return yellow;\n}\n\nfunction yellowUpdate (yellowHash) {\n  var sampleValue={\"extraField\":true};\n  var yellowOutHash = update(\"yellow\", sampleValue, yellowHash);\n  return yellowOutHash;\n}\n\nfunction associate (text) {\n  // your custom code here\n  return \"a string\";\n}\n\nfunction associate2 (params) {\n  // your custom code here\n  return {};\n}\n\n\n// -----------------------------------------------------------------\n//  The Genesis Function https://developer.holochain.org/genesis\n// -----------------------------------------------------------------\n\n/**\n * Called only when your source chain is generated\n * @return {boolean} success\n */\nfunction genesis () {\n  return true;\n}\n\n// -----------------------------------------------------------------\n//  Validation functions for every change to the local chain or DHT\n// -----------------------------------------------------------------\n\n/**\n * Called to validate any changes to the local chain or DHT\n * @param {string} entryName - the type of entry\n * @param {*} entry - the entry data to be set\n * @param {object} header - header for the entry containing properties EntryLink, Time, and Type\n * @param {*} pkg - the extra data provided by the validate[X]Pkg methods\n * @param {object} sources - an array of strings containing the keys of any authors of this entry\n * @return {boolean} is valid?\n */\nfunction validateCommit (entryName, entry, header, pkg, sources) {\n  switch (entryName) {\n    case \"orange\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"red\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"blue\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"green\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"yellow\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    default:\n      // invalid entry name\n      return false;\n  }\n}\n\n/**\n * Called to validate any changes to the local chain or DHT\n * @param {string} entryName - the type of entry\n * @param {*} entry - the entry data to be set\n * @param {object} header - header for the entry containing properties EntryLink, Time, and Type\n * @param {*} pkg - the extra data provided by the validate[X]Pkg methods\n * @param {object} sources - an array of strings containing the keys of any authors of this entry\n * @return {boolean} is valid?\n */\nfunction validatePut (entryName, entry, header, pkg, sources) {\n  switch (entryName) {\n    case \"orange\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"red\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"blue\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"green\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"yellow\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    default:\n      // invalid entry name\n      return false;\n  }\n}\n\n/**\n * Called to validate any changes to the local chain or DHT\n * @param {string} entryName - the type of entry\n * @param {*} entry - the entry data to be set\n * @param {object} header - header for the entry containing properties EntryLink, Time, and Type\n * @param {string} replaces - the hash for the entry being updated\n * @param {*} pkg - the extra data provided by the validate[X]Pkg methods\n * @param {object} sources - an array of strings containing the keys of any authors of this entry\n * @return {boolean} is valid?\n */\nfunction validateMod (entryName, entry, header, replaces, pkg, sources) {\n  switch (entryName) {\n    case \"orange\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"red\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"blue\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"green\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"yellow\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    default:\n      // invalid entry name\n      return false;\n  }\n}\n\n/**\n * Called to validate any changes to the local chain or DHT\n * @param {string} entryName - the type of entry\n * @param {string} hash - the hash of the entry to remove\n * @param {*} pkg - the extra data provided by the validate[X]Pkg methods\n * @param {object} sources - an array of strings containing the keys of any authors of this entry\n * @return {boolean} is valid?\n */\nfunction validateDel (entryName, hash, pkg, sources) {\n  switch (entryName) {\n    case \"orange\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"red\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"blue\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"green\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"yellow\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    default:\n      // invalid entry name\n      return false;\n  }\n}\n\n/**\n * Called to validate any changes to the local chain or DHT\n * @param {string} entryName - the type of entry\n * @param {string} baseHash - the hash of the base entry being linked\n * @param {?} links - ?\n * @param {*} pkg - the extra data provided by the validate[X]Pkg methods\n * @param {object} sources - an array of strings containing the keys of any authors of this entry\n * @return {boolean} is valid?\n */\nfunction validateLink (entryName, baseHash, links, pkg, sources) {\n  switch (entryName) {\n    case \"orange\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"red\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"blue\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"green\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    case \"yellow\":\n      // be sure to consider many edge cases for validating\n      // do not just flip this to true without considering what that means\n      // the action will ONLY be successfull if this returns true, so watch out!\n      return false;\n    default:\n      // invalid entry name\n      return false;\n  }\n}\n\n/**\n * Called to get the data needed to validate\n * @param {string} entryName - the name of entry to validate\n * @return {*} the data required for validation\n */\nfunction validatePutPkg (entryName) {\n  return null;\n}\n\n/**\n * Called to get the data needed to validate\n * @param {string} entryName - the name of entry to validate\n * @return {*} the data required for validation\n */\nfunction validateModPkg (entryName) {\n  return null;\n}\n\n/**\n * Called to get the data needed to validate\n * @param {string} entryName - the name of entry to validate\n * @return {*} the data required for validation\n */\nfunction validateDelPkg (entryName) {\n  return null;\n}\n\n/**\n * Called to get the data needed to validate\n * @param {string} entryName - the name of entry to validate\n * @return {*} the data required for validation\n */\nfunction validateLinkPkg (entryName) {\n  return null;\n}"
+      }
+    ]
+  },
+
+  # TestSets
+  # Auto-Generated test sets for hcdev package
+  "TestSets": [
+    {
+
+      # Name
+      # Name of the Test Set
+      "Name": "visual",
+      "TestSet": {
+        "Tests": [
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for orangeCreate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "orangeCreate",
+
+            # Input
+            # Input sent to the function
+            "Input": "test",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for orangeRead",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "orangeRead",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "test"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for orangeUpdate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "orangeUpdate",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for redCreate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "redCreate",
+
+            # Input
+            # Input sent to the function
+            "Input": "test",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for redRead",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "redRead",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "test"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for redUpdate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "redUpdate",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for blueCreate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "blueCreate",
+
+            # Input
+            # Input sent to the function
+            "Input": "test",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for blueRead",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "blueRead",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "test"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for blueUpdate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "blueUpdate",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for greenCreate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "greenCreate",
+
+            # Input
+            # Input sent to the function
+            "Input": "test",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for greenRead",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "greenRead",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "test"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for greenUpdate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "greenUpdate",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for yellowCreate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "yellowCreate",
+
+            # Input
+            # Input sent to the function
+            "Input": "test",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for yellowRead",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "yellowRead",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "test"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for yellowUpdate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "yellowUpdate",
+
+            # Input
+            # Input sent to the function
+            "Input": "%h%",
+
+            # Output
+            # Output from the function to validate
+            "Output": "%h%"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for associate",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "associate",
+
+            # Input
+            # Input sent to the function
+            "Input": "",
+
+            # Output
+            # Output from the function to validate
+            "Output": "a string"
+          },
+          {
+
+            # Convey
+            # Description of this test
+            "Convey": "auto-generated test for associate2",
+
+            # Zome
+            # The zome this test is related to
+            "Zome": "visual",
+
+            # Function Name
+            # The function to test
+            "FnName": "associate2",
+
+            # Input
+            # Input sent to the function
+            "Input": "",
+
+            # Output
+            # Output from the function to validate
+            "Output": {}
+          }
+        ]
+      }
+    }
+  ]
+}
